@@ -12,7 +12,8 @@ Analyze an article and extract the entities with [spaCy](https://spacy.io/).
 ![](https://github.com/josehenriqueroveda/machine-learning-API/blob/master/img/200.png)
 
 ### Response 422 example:
-When there is an error on the object, it returned 422 and shows where is the error.
+- When there is an error on the object, it returned 422 and shows where is the error.
+
 ![](https://github.com/josehenriqueroveda/machine-learning-API/blob/master/img/422.png)
 
 #### Tools
