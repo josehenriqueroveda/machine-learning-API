@@ -21,8 +21,11 @@ class Article(BaseModel):
 @app.post('/article/')
 def analyze_article(articles: List[Article]):
     ents = []
+    comments = []
     for article in articles:
+        for comment in comments:
+            comments.append(comment.upper())
         doc = nlp(article.content)
         for ent in doc.ents:
             ents.append({'text': ent.text, 'label': ent.label_})
-    return {'ents': ents}
+    return {'ents': ents, 'comments': comments}
